@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warpcast Frame Example</title>
+    <meta property="fc:frame" content="vNext" />
+    <meta property="fc:frame:image" content="https://example.com/image.png" />
+    <meta property="fc:frame:button:1" content="Show Message" />
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('show-message').addEventListener('click', function() {
+                document.getElementById('message').innerHTML = 'Hello, this is a test message!';
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Warpcast Frame Example</h1>
+    <button id="show-message">Show Message</button>
+    <div id="message"></div>
+</body>
+</html>
